@@ -37,25 +37,31 @@
 
 
  </style>
-
+ 
  <script>
 
+    var teljes = document.getElementById("teljes")
+
     function nemkatt() {
-        document.getElementById("teljes").style.display='none'
+        document.getElementById("body").style.display='none'
         document.getElementById("nemkatt").style.display=''
+        teljes.style.backgroundColor='lightred'
+        
         
     }
 
     function igenkatt() {
-        document.getElementById("teljes").style.display='none'
+        document.getElementById("body").style.display='none'
         document.getElementById("igenkatt").style.display=''
+        teljes.style.backgroundColor='lightgreen'
         
     }
 
     function vissza() {
         document.getElementById("nemkatt").style.display='none'
         document.getElementById("igenkatt").style.display='none'
-        document.getElementById("teljes").style.display=''
+        document.getElementById("body").style.display=''
+
     }
 
  </script>
@@ -69,7 +75,7 @@
     <br>
     <br>
     <h2 id="kerdes" class="kerdes">Szereted a Frufrus láknyokat?</h1>
-    <button id="igen" class="igen">Igen</button><button id="nem" class="nem" onclick="nemkatt()">nem</button>
+    <button id="igen" class="igen" onclick="igenkatt()">Igen</button><button id="nem" class="nem" onclick="nemkatt()">nem</button>
 </body>
 </div>
 
