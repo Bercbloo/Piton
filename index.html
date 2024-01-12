@@ -14,6 +14,27 @@
 
     .kerdes {font-weight: bolder;}
 
+    .igenkatt {
+        background-color: aqua;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: bold;
+        font-size: large;
+    }
+
+    .nemkatt {
+        background-color: red;
+        font-weight: bolder;
+        font-size: large;
+    }
+
+    .vissza {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: medium;
+        border: 10px solid blue;
+        border-radius: 2px;
+        
+    }
+
 
  </style>
 
@@ -29,7 +50,6 @@
         document.getElementById("teljes").style.display='none'
         document.getElementById("igenkatt").style.display=''
         
-
     }
 
     function vissza() {
@@ -53,7 +73,7 @@
 </body>
 </div>
 
-<div id="igenkatt" style="display: none;">
+<div id="igenkatt"class="igenkatt"style="display: none;">
     <h1>AKKOR TE EGY RENDES EMBER VAGY</h1>
         <br><br>
             <button id="vissza" class="vissza" onclick="vissza()">vissza</button>
