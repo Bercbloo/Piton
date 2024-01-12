@@ -16,27 +16,28 @@
  </style>
 
  <script>
-    document.getElementsByClassName("igen")=igen 
-    document.getElementsByClassName("nem")=nem
-    document.getElementsByClassName("teljes")=teljes
+   
+    document.getElementById("teljes")=teljes
+    document.getElementById("nem")=nem
+    document.getElementById("igen")=igen
 
-    function(nemkatt):
-    if (onlcick) {
-
+    function nemkatt() {
+        document.getElementById("teljes").innerHTML=''
         
     }
  </script>
 
 <center>
-    <div class="teljes">
+<div id="teljes" class="teljes">
 <body class="body">
     <h1>
         HENRIK'S PAGE
     </h1>
     <br>
     <br>
-    <h2 class="kerdes">Szereted a Frufrus láknyokat?</h1>
-    <button class="igen">Igen</button> <button class="nem">nem</button>
-</center>
+    <h2 id="kerdes" class="kerdes">Szereted a Frufrus láknyokat?</h1>
+    <button id="igen" class="igen">Igen</button> <button id="nem" class="nem" onclick="nemkatt()"></button>
 </div>
+</center>
+
 </body>
