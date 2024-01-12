@@ -18,11 +18,24 @@
  <script>
 
     function nemkatt() {
-        document.getElementById("teljes").innerHTML=''
+        document.getElementById("teljes").style.display='none'
+        document.getElementById("nemkatt").style.display=''
         
     }
 
-    function igenkatt()
+    function igenkatt() {
+        document.getElementById("teljes").style.display='none'
+        document.getElementById("igenkatt").style.display=''
+        
+
+    }
+
+    function vissza() {
+        document.getElementById("nemkatt").style.display='none'
+        document.getElementById("igenkatt").style.display='none'
+        document.getElementById("teljes").style.display=''
+    }
+
  </script>
 
 <center>
@@ -35,6 +48,20 @@
     <br>
     <h2 id="kerdes" class="kerdes">Szereted a Frufrus láknyokat?</h1>
     <button id="igen" class="igen">Igen</button>nem<button id="nem" class="nem" onclick="nemkatt()"></button>
+</div>
+
+<div id="igenkatt" style="display: none;">
+    <h1>AKKOR TE EGY RENDES EMBER VAGY</h1>
+        <br><br>
+            <button id="vissza" class="vissza">vissza</button>
+        </div>
+
+
+<div class="nemkatt" id="nemkatt" style="display: none;">
+<br><br><br>
+<h1>SÖtétben bújkáló ellenforradalmár reszkess</h1>
+<button id="vissza" class="vissza"></button>
+
 </div>
 </center>
 
