@@ -43,4 +43,4 @@ def calculate_chads_vasc(age, gender, stroke, heart_disease, hypertension, diabe
     return chads_vasc_points
 
 if __name__ == '__main__':
-    app.run(debug=True, use_reloader=False)#ez egy python file 
+    app.run(debug=False, use_reloader=False)#ez egy python file 
