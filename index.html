@@ -1,98 +1,55 @@
 <!DOCTYPE html>
- <style>
-    .igen {
-        font-size: large;
-    }
-    .nem {font-size: large;
-    }
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chads-Vasc Score Kalkulátor</title>
+</head>
+<body>
+    <h1>Chads-Vasc Score Kalkulátor</h1>
+    <form method="post" action="/">
+        <label for="age">Életkor:</label>
+        <input type="number" name="age" required><br>
 
-    .body {
-        background-color: antiquewhite;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        font-weight: bold;
-    }
+        <label for="gender">Nem:</label>
+        <select name="gender" required>
+            <option value="male">Férfi</option>
+            <option value="female">Nő</option>
+        </select><br>
 
-    .kerdes {font-weight: bolder;}
+        <label for="stroke">Stroke előzménye:</label>
+        <select name="stroke" required>
+            <option value="0">Nincs</option>
+            <option value="1">Van</option>
+        </select><br>
+        <label for="heart_disease">Szívbetegség előzménye:</label>
+        <select name="heart_disease" required>
+            <option value="0">Nincs</option>
+            <option value="1">Van</option>
+        </select><br>
 
-    .igenkatt {
-        background-color: aqua;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        font-weight: bold;
-        font-size: large;
-    }
+        <label for="hypertension">Magas vérnyomás:</label>
+        <select name="hypertension" required>
+            <option value="0">Nincs</option>
+            <option value="1">Van</option>
+        </select><br>
 
-    .nemkatt {
-        background-color: red;
-        font-weight: bolder;
-        font-size: large;
-    }
+        <label for="diabetes">Cukorbetegség:</label>
+        <select name="diabetes" required>
+            <option value="0">Nincs</option>
+            <option value="1">Van</option>
+        </select><br>
 
-    .vissza {
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        font-size: medium;
-        border: 10px solid blue;
-        border-radius: 2px;
-        
-    }
+        <label for="vascular_disease">Vascularis betegség előzménye:</label>
+        <select name="vascular_disease" required>
+            <option value="0">Nincs</option>
+            <option value="1">Van</option>
+        </select><br>
 
-
- </style>
- 
- <script>
-
-    teljes = document.getElementById("teljes")
-
-    function nemkatt() {
-        document.getElementById("body").style.display='none'
-        document.getElementById("nemkatt").style.display=''
-       // teljes.style.backgroundColor='red'
-        
-        
-    }
-
-    function igenkatt() {
-        document.getElementById("body").style.display='none'
-        document.getElementById("igenkatt").style.display=''
-       // teljes.style.backgroundColor='green'
-        
-    }
-
-    function vissza() {
-        document.getElementById("nemkatt").style.display='none'
-        document.getElementById("igenkatt").style.display='none'
-        document.getElementById("body").style.display=''
-
-    }
-
- </script>
-
-<center>
-<div id="teljes" class="teljes">
-<body class="body">
-    <h1>
-        HENRIK'S PAGE
-    </h1>
-    <br>
-    <br>
-    <h2 id="kerdes" class="kerdes">Szereted a Frufrus láknyokat?</h1>
-    <button id="igen" class="igen" onclick="igenkatt()">Igen</button>
-    <button id="nem" class="nem" onclick="nemkatt()">nem</button>
+        <button type="submit">Számolás</button>
+    </form>
 </body>
-</div>
-
-<div id="igenkatt"class="igenkatt"style="display: none;">
-    <h1>AKKOR TE EGY RENDES EMBER VAGY</h1>
-        <br><br>
-            <button id="vissza" class="vissza" onclick="vissza()">vissza</button>
-        </div>
-
-
-<div class="nemkatt" id="nemkatt" style="display: none;">
-<br><br><br>
-<h1>SÖtétben bújkáló ellenforradalmár reszkess</h1>
-<button id="vissza" class="vissza"></button>
-
-</div>
-</center>
+</html>
 
 
